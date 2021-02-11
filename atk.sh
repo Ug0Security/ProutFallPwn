@@ -28,7 +28,7 @@ if [[ $cookie = *"Logged In"* ]]; then
 
   echo "Cleaning  ... "
 
-  torify curl -s --cookie \"$cookie\" -X POST "$1/cgi-bin/newSetNetwork3D.cgi" --data "[{\"Name\":\"ServerIP\",\"Value\":\"https://www.footfallcam.com\"}]" 
+  torify curl -s --cookie \"$cookie\" -X POST "$1/cgi-bin/newSetNetwork3D.cgi" --data "[{\"Name\":\"ServerIP\",\"Value\":\"https://www.footballcam.com\"}]" 
   exit
 
 else
