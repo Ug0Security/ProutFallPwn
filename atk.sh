@@ -1,3 +1,5 @@
+# Ta gueule Vlad, meme toi tu m'a dit qu'il était bien mon script, enculé va xD !
+
 if [ $# -lt 2 ]; then
   echo "$0: Usage $0 http://TARGET Command (LHOST) (LPORT)"
   exit
